@@ -1,10 +1,10 @@
 <script lang="ts">
+  import BookInfo from '../components/BookInfo.svelte'
+  import Spinner from "../components/Spinner.svelte";
   import type { Readable } from "svelte/store";
-  import BookInfo from '../componetns/BookInfo.svelte';
-  import Spinner from "../componetns/Spinner.svelte";
   import type { BookItem } from "../repositories/book";
-  import RepositoryFactory,{ BOOK } from "../repositories/RepositoryFatory";
-  import { books,find } from "../store/book";
+  import RepositoryFactory, { BOOK } from "../repositories/RepositoryFactory";
+  import { find, books } from "../store/book";
   const BookRepository = RepositoryFactory[BOOK];
 
   type Params = { id: string };

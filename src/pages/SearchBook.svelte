@@ -1,10 +1,10 @@
 <script lang="ts">
-  import InfiniteScroll from "svelte-infinite-scroll";
-  import SearchBar from '../components/SearchBar.svelte';
-  import Spinner from '../components/Spinner.svelte';
-  import BookCard from '../componetns/BookCard.svelte';
-  import RepositoryFactory,{ BOOK } from '../repositories/RepositoryFatory';
-  import { books } from '../store/book';
+  import SearchBar from '../components/SearchBar.svelte'
+  import Spinner from '../components/Spinner.svelte'
+  import BookCard from '../components/BookCard.svelte'
+  import RepositoryFactory, { BOOK } from '../repositories/RepositoryFactory'
+  import InfiniteScroll from "svelte-infinite-scroll"
+  import { books } from '../store/book'
   const BookRepository = RepositoryFactory[BOOK]
 
   let q = ''

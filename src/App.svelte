@@ -1,8 +1,8 @@
 <script lang="ts">
-  import Router from 'svelte-spa-router';
-  import Header from './componetns/Header.svelte';
-  import { routes } from './router';
   import Tailwindcss from './Tailwindcss.svelte';
+  import Header from './components/Header.svelte'
+  import Router from 'svelte-spa-router'
+  import { routes } from './router'
 </script>
 
 <Tailwindcss />
